@@ -22,9 +22,14 @@
             <p style="margin-top: 10px">Making decisions is hard, so I made an app to do that for me. Enter your choices, then click decide to randomly pick one.</p>
 
             <form class="form">
-                <div class="form-group" ng-repeat="(i, choice) in choices track by i">
+                <div class="form-group input-group" ng-repeat="(i, choice) in choices track by i">
                     <input class="form-control" type="text"
                         ng-model="choices[$index]" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" ng-click="remove($index)">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                    </span>
                 </div>
 
                 <button class="btn btn-default" ng-click="add()">Add choice</button>
