@@ -19,9 +19,9 @@
         <!-- choices -->
         <div class="container">
 
-            <form class="form">
-                <div class="form-group">Making decisions is hard, so I made an app to do that for me. Enter your choices, then click decide to randomly pick one.</p>
+            <p style="margin-top: 10px">Making decisions is hard, so I made an app to do that for me. Enter your choices, then click decide to randomly pick one.</p>
 
+            <form class="form">
                 <div class="form-group" ng-repeat="(i, choice) in choices track by i">
                     <input class="form-control" type="text"
                         ng-model="choices[$index]" />
