@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" ng-app="decide">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,23 +10,32 @@
 
         <link rel="stylesheet" href="http://bundles.thinkjson.com/bundles/angular-bundle.min.css">
         <link rel="stylesheet" href="/bootswatch.min.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body ng-controller="MainController">
 
         <!-- choices -->
         <div class="container">
 
-            <div class="row">
-            	<div class="col-xs-3">
-            		<a href="/decide/">
-	            		<h2>Decide</h2>
-	            	</a>
-            	</div>
-            </div>
+            <form class="form">
+                <div class="form-group">Making decisions is hard, so I made an app to do that for me. Enter your choices, then click decide to randomly pick one.</p>
+
+                <div class="form-group" ng-repeat="(i, choice) in choices track by i">
+                    <input class="form-control" type="text"
+                        ng-model="choices[$index]" />
+                </div>
+
+                <button class="btn btn-default" ng-click="add()">Add choice</button>
+                <button class="btn btn-default btn-primary" ng-click="decide()">Decide</button>
+            </form>
+
+            <h1 ng-bind="choice"></h1>
         </div>
 
         <script src="http://bundles.thinkjson.com/bundles/angular-bundle.min.js"></script>
+        <script src="js/main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
