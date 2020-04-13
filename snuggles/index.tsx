@@ -29,8 +29,8 @@ class App extends React.Component<{}, AppState> {
                 <button onClick={() => this.select(2)} className={"btn btn-lg " + (this.state.turn === 2 ? "btn-primary" : "btn-secondary")}>Ellie</button>
 
                 <div className="mt-4">{tonight[0]} is on my right</div>
-                <div>{tonight[1]} is on my left</div>
-                <div>{tonight[2]} is on the floor</div>
+                <div>{tonight[2]} is on my left</div>
+                <div>{tonight[1]} is on the floor</div>
             </div>
         );
     }

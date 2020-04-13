@@ -28391,7 +28391,7 @@ function (_super) {
       className: "btn btn-lg " + (this.state.turn === 2 ? "btn-primary" : "btn-secondary")
     }, "Ellie"), /*#__PURE__*/React.createElement("div", {
       className: "mt-4"
-    }, tonight[0], " is on my right"), /*#__PURE__*/React.createElement("div", null, tonight[1], " is on my left"), /*#__PURE__*/React.createElement("div", null, tonight[2], " is on the floor"));
+    }, tonight[0], " is on my right"), /*#__PURE__*/React.createElement("div", null, tonight[2], " is on my left"), /*#__PURE__*/React.createElement("div", null, tonight[1], " is on the floor"));
   };
 
   return App;
@@ -28430,7 +28430,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42007" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54106" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
