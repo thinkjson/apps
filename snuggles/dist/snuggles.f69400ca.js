@@ -657,7 +657,7 @@ function (_super) {
       className: this.state.turn === 2 ? "button-primary" : ""
     }, "Ellie"), h("div", {
       className: "results"
-    }, h("div", null, tonight[0], " is on my right"), h("div", null, tonight[1], " is on my left"), h("div", null, tonight[2], " is on the floor")));
+    }, h("div", null, tonight[0], " is on my right"), h("div", null, tonight[2], " is on my left"), h("div", null, tonight[1], " is on the floor")));
   };
 
   return App;
@@ -696,7 +696,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37127" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39089" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
