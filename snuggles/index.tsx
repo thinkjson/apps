@@ -32,9 +32,8 @@ class App extends Component<{}, AppState> {
 
                 <div className="results">
                     <div>{tonight[0]} is on my right</div>
-                    <div>{tonight[1]} is on my left</div>
-                    <div>{tonight[2]} is on the floor</div>
-                </div>
+                <div>{tonight[2]} is on my left</div>
+                <div>{tonight[1]} is on the floor</div>
             </div>
         );
     }
