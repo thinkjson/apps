@@ -1,0 +1,9 @@
+@import "./skeleton.css";
+
+.container, .results {
+    margin-top: 32px;
+}
+
+button {
+    margin-right: 8px;
+}
